@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-tempo">
+                <h2 style="color:#2600ff">Tempo Restante</h2>
+                <h2 id="tempoRestante">0</h2>
+            </div>
+            <div class="menu-placar">
+                <h2 style="color:#2600ff">Placar</h2>
+                <h2 id="placar">0</h2>
+            </div>
+            <div class="menu-recorde">
+                <h2 style="color:#2600ff">Recorde</h2>
+                <h2 id="recorde">0</h2>
+            </div>
+
+            <div class="menu-vidas">
+                <img src="./src/imagens/vida.png" height="50px"/>
+                <h2> = </h2>
+                <h2 id="vidas">x3</h2>
+            </div>
+        </div>
+        <div class="painel">
+            <div class="panel-row">
+                <div class="quadrado inimigo" id="1"></div>
+                <div class="quadrado" id="2"></div>
+                <div class="quadrado" id="3"></div>
+            </div>
+            <div class="panel-row">
+                <div class="quadrado" id="4"></div>
+                <div class="quadrado" id="5"></div>
+                <div class="quadrado" id="6"></div>
+            </div>
+            <div class="panel-row">
+                <div class="quadrado" id="7"></div>
+                <div class="quadrado" id="8"></div>
+                <div class="quadrado" id="9"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/scripts/engine.js"></script>
+</body>
+</html>
